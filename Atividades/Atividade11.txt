@@ -1,28 +1,35 @@
-1. Criar uma Activity no Android Studio.
+﻿1. Criar uma Activity no Android Studio.
 
 a) Abra o aplicativo Android Studio.
 
-b) Escolha a opção "Start New Android Studio Project". Selecione a aba "Phone and Tablet" e o template "Add No Activity".
+b) Escolha a opção "Start New Android Studio Project". Selecione a aba
+"Phone and Tablet" e o template "Add No Activity".
 
-c) Prossiga atribuindo o nome Atividade11 ao projeto e o br.iesb.ads023.atividade11 ao pacote.
+c) Prossiga atribuindo o nome Atividade11 ao projeto e o br.iesb.ads023.atividade11
+ao pacote.
 
-d) Verifique se a localização do projeto está indicando a pasta ADS023. Senão estiver, atualize para o caminho correto (C:\Users\matricula\Desktop\ADS023\Projetos\Atividade11). 
+d) Verifique se a localização do projeto está indicando a pasta ADS023. Senão estiver,
+atualize para o caminho correto (C:\Users\matricula\Desktop\ADS023\Projetos\Atividade11). 
 
 e) Deixe a linguagem Kotlin como padrão do projeto e finalize o assistente.
 
-f) Ative o versionamento acionando o menu VCS->Enable Version Control Integration. Selecione o Git no sistema de controle de versão.
+f) Ative o versionamento acionando o menu VCS->Enable Version Control Integration.
+Selecione o Git no sistema de controle de versão.
 
-g) Crie uma classe MainActivity que estenda da classe android.app.Activity através do menu File->New->Kotlin class.
+g) Crie uma classe MainActivity que estenda da classe android.app.Activity através do
+menu File->New->Kotlin class.
 
 class MainActivity : Activity() { }
 
-h) Dentro da classe sobrescreva o método onCreate() que deve chamar o método correspondente da sua superclasse.
+h) Dentro da classe sobrescreva o método onCreate() que deve chamar o método
+correspondente da sua superclasse.
 
 override fun onCreate(savedInstanceState: Bundle?) {
    super.onCreate(savedInstanceState);     
 }
 
-i) Declare a activity no arquivo de manifesto como sendo a principal (Dica: abra a tag <application> e insira a tag <activity>).
+i) Declare a activity no arquivo de manifesto como sendo a principal (Dica: abra a tag
+<application> e insira a tag <activity>).
 <application>
 
 <activity android:name=".MainActivity"
@@ -34,7 +41,8 @@ i) Declare a activity no arquivo de manifesto como sendo a principal (Dica: abra
 
 </application>
 
-j) Execute o projecto através da opção 'Run app'. Escolha entre executar em um dispositivo virtual ou em um dispositivo móvel. Qual foi o resultado?
+j) Execute o projecto através da opção 'Run app'. Escolha entre executar em um
+dispositivo virtual ou em um dispositivo móvel. Qual foi o resultado?
 
 k) Pare a execução do projeto através da opção 'Stop app'.
 
@@ -64,7 +72,8 @@ f) Sobrescreva o método onDestroy() e faça ele imprimir a mensagem "onDestroy 
 
 g) Execute o projeto através da opção 'Run app'.
 
-h) Na barra inferior do Antroid Studio acesse a aba Logcat e filtre as mensagens por println.
+h) Na barra inferior do Antroid Studio acesse a aba Logcat e filtre as mensagens por
+ println.
 
 i) Interaja com o app para que sejam disparados os métodos da classe MainActivity.
 
@@ -76,7 +85,8 @@ j) Interrompa a execução do projeto através da opção 'Stop app'.
 
 a) Crie uma pasta layout dentro da pasta res.
 
-b) Dentro da pasta layout crie um arquivo de recurso de leiaute através do menu File->New->Layout resource file.
+b) Dentro da pasta layout crie um arquivo de recurso de leiaute
+através do menu File->New->Layout resource file.
 
 c) Atribua o nome activity_main ao arquivo e no Root element LinearLayout.
 
@@ -92,7 +102,8 @@ d) Alterne para o modo Text para visualizar o conteúdo do arquivo.
  
 </LinearLayout>
 
-e) Insira uma tag <TextView> dentro da tag <LinearLayout> (Dica: abra a tag <LinearLayout> e insira a tag <TextView>).
+e) Insira uma tag <TextView> dentro da tag <LinearLayout>
+(Dica: abra a tag <LinearLayout> e insira a tag <TextView>).
 
 <TextView
      android:id="@+id/textView3"
@@ -100,7 +111,8 @@ e) Insira uma tag <TextView> dentro da tag <LinearLayout> (Dica: abra a tag <Lin
      android:layout_height="wrap_content"
      android:text="Olá Mundo!" />
 
-f) No método onCreate() da classe MainActivity acrescente uma chamada ao método setContentView() passando como parâmetro o arquivo de leioute.
+f) No método onCreate() da classe MainActivity acrescente uma chamada ao método
+setContentView() passando como parâmetro o arquivo de leioute.
 
 setContentView(R.layout.activity_main);
 
@@ -110,6 +122,7 @@ h) Interrompa a execução do projeto através da opção 'Stop app'.
 
 i) Adicione os arquivos no git local através do menu VCS->Git->Add.
 
-j) Faça o commit através do menu VCS->Commit. Marque todos os itens e acrescente ao comentário "Criando projeto Atividade11". Acione a opção Commit.
+j) Faça o commit através do menu VCS->Commit. Marque todos os itens e acrescente ao
+comentário "Criando projeto Atividade11". Acione a opção Commit.
 
 k) Envie os arquivos versionados para o git remoto acionando o menu VCS->Git->Push.
